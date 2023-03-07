@@ -14,7 +14,7 @@ Finally, the File-organizer moves each file to the directory corresponding to it
 
 
 # Clone the repository
-git clone https://github.com/your_username/your_repository.git
+git clone https://github.com/jarijurrie/file-organizer.git
 
 # Navigate to the directory where you have stored the script in the command line
 cd your_repository
@@ -23,4 +23,4 @@ cd your_repository
 pip install -r requirements.txt
 
 # Run the script
-python script_name.py
+python file_organizer.py
