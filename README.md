@@ -11,6 +11,3 @@ Next, the File-organizer gets a list of all the files in the selected download d
 File-organizer loops through each file in the download directory and gets its file extension using the os.path.splitext() function. If the file extension is not empty and not already in the file_types dictionary, it adds the file extension and its corresponding directory to the file_types dictionary and creates the corresponding subdirectory in the selected organized directory using the os.makedirs() function with the exist_ok=True option.
 
 Finally, the File-organizer moves each file to the directory corresponding to its file type using the shutil.move() function. This way, the script organizes all the files in the selected download directory into subdirectories based on their file types in the selected organized directory.
-
-pip install -r requirements.txt
-python file_organizer.py
