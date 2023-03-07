@@ -1,6 +1,5 @@
 # File-organizer
 This Python script is designed to organize files in a directory by grouping them into subdirectories based on their file types.
-Instructions:
 
 The script uses the os, shutil, configparser, and tkinter modules. The tkinter module is used to create a graphical user interface (GUI) that prompts the user to select a directory to organize and a directory to move the organized files to.
 
