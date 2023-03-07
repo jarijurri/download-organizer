@@ -3,10 +3,10 @@ This Python script reads the files in the default Windows download folder and cr
 
 Instructions:
 
--Replace the "organized_path" variable with the directory path where you want to create the new directories for each file extension. By default, the variable is set to 
+-1. Replace the "organized_path" variable with the directory path where you want to create the new directories for each file extension. By default, the variable is set to 
 "D:/organized_downloads", but you can change it to any directory path you like.
 
--Run the Python script. It will read the files in the default Windows download folder and create a new directory for each file extension it finds in the "organized_path" 
+2. Run the Python script. It will read the files in the default Windows download folder and create a new directory for each file extension it finds in the "organized_path" 
 directory you specified in step 1. The script will move the corresponding files to the new directories.
 
--If you want to change the directory path after running the script, you can simply modify the "organized_path" variable in the script and run it again.
+3. If you want to change the directory path after running the script, you can simply modify the "organized_path" variable in the script and run it again.
