@@ -1,3 +1,7 @@
+'''pip install -r requirements.txt
+'''
+'''python file_organizer.py
+'''
 # File-organizer
 
 File-organizer is designed to organize files in a directory by grouping them into subdirectories based on their file types.
