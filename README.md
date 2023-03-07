@@ -2,7 +2,6 @@
 This Python script reads the files in the default Windows download folder and creates a new directory for each file extension it finds. It first creates an empty dictionary to store the file extensions and their corresponding directories. Then it loops through each file in the default Windows download folder, gets its file extension, and checks if the file extension is not empty. If the file extension is not empty, it checks if the file extension is already in the dictionary. If it is not, it creates a new directory with the same name as the file extension in the "organized_path" directory specified by the user. Finally, it moves the file to the directory corresponding to its file extension.
 
 Instructions:
-To use this script, you can follow these steps:
 
 -Replace the "organized_path" variable with the directory path where you want to create the new directories for each file extension. By default, the variable is set to 
 "D:/organized_downloads", but you can change it to any directory path you like.
