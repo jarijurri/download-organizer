@@ -2,7 +2,7 @@ import os
 import shutil
 
 # Define the directory path
-path = "C:/Users/jussi/Downloads"
+path = "C:/Users/user/Downloads"
 
 # Create a list of all the files in the directory
 files = os.listdir(path)
