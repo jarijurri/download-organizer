@@ -1,12 +1,13 @@
-# download-organizer
-This Python script reads the files in the default Windows download folder (or any folder you like) and creates a new directory for each file extension it finds. It first creates an empty dictionary to store the file extensions and their corresponding directories. Then it loops through each file in the default Windows download folder, gets its file extension, and checks if the file extension is not empty. If the file extension is not empty, it checks if the file extension is already in the dictionary. If it is not, it creates a new directory with the same name as the file extension in the "organized_path" directory specified by the user. Finally, it moves the file to the directory corresponding to its file extension. 
-
+# File-organizer
+This Python script is designed to organize files in a directory by grouping them into subdirectories based on their file types.
 Instructions:
 
-1. Replace the "organized_path" variable with the directory path where you want to create the new directories for each file extension. By default, the variable is set to 
-"D:/organized_downloads", but you can change it to any directory path you like.
+The script uses the os, shutil, configparser, and tkinter modules. The tkinter module is used to create a graphical user interface (GUI) that prompts the user to select a directory to organize and a directory to move the organized files to.
 
-2. Run the Python script. It will read the files in the default Windows download folder and create a new directory for each file extension it finds in the "organized_path" 
-directory you specified in step 1. The script will move the corresponding files to the new directories.
+The script then creates a config.ini file to store the selected directories using the configparser module and reads the selected directories from the config.ini file.
 
-3. If you want to change the directory path after running the script, you can simply modify the "organized_path" variable in the script and run it again.
+Next, the script gets a list of all the files in the selected download directory using the os.listdir() function. It then creates an empty dictionary to store file types and their corresponding directories.
+
+The script loops through each file in the download directory and gets its file extension using the os.path.splitext() function. If the file extension is not empty and not already in the file_types dictionary, it adds the file extension and its corresponding directory to the file_types dictionary and creates the corresponding subdirectory in the selected organized directory using the os.makedirs() function with the exist_ok=True option.
+
+Finally, the script moves each file to the directory corresponding to its file type using the shutil.move() function. This way, the script organizes all the files in the selected download directory into subdirectories based on their file types in the selected organized directory.
