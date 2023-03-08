@@ -8,11 +8,11 @@ from tkinter import filedialog
 root = tk.Tk()
 root.withdraw()
 
-# Prompt the user to select the download directory
+# Prompt the user to select the directory to organize
 download_dir = filedialog.askdirectory(title="Select directory to organized")
 
-# Prompt the user to select the organized directory
-organized_dir = filedialog.askdirectory(title="Select directory to move oranized files")
+# Prompt the user to select the directory where to move organized files
+organized_dir = filedialog.askdirectory(title="Select directory where to move organized files")
 
 # Create the config.ini file
 config = configparser.ConfigParser()
